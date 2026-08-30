@@ -10,6 +10,8 @@
 [![GitHub license](https://img.shields.io/github/license/y08lin4/GitHub-proxy?style=flat-square)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/y08lin4/GitHub-proxy?style=flat-square)](https://github.com/y08lin4/GitHub-proxy/stargazers)
 
+[在线演示](https://github-proxy.linyu.qzz.io/)
+
 </div>
 
 ## 项目简介
@@ -20,7 +22,7 @@
 
 ```text
 原始地址: https://github.com/user/repo/releases/download/v1.0/app.zip
-代理地址: https://your-domain.example/user/repo/releases/download/v1.0/app.zip
+代理地址: https://github-proxy.linyu.qzz.io/user/repo/releases/download/v1.0/app.zip
 ```
 
 ## 快速开始
@@ -50,24 +52,24 @@ npm run deploy
 代理支持完整 URL 和简写路径两种形式。
 
 ```text
-https://your-domain.example/https://github.com/user/repo/releases/download/v1.0/app.zip
-https://your-domain.example/user/repo/releases/download/v1.0/app.zip
+https://github-proxy.linyu.qzz.io/https://github.com/user/repo/releases/download/v1.0/app.zip
+https://github-proxy.linyu.qzz.io/user/repo/releases/download/v1.0/app.zip
 ```
 
 常见用法：
 
 ```text
 # Release 文件
-https://your-domain.example/user/repo/releases/download/v1.0/app.zip
+https://github-proxy.linyu.qzz.io/user/repo/releases/download/v1.0/app.zip
 
 # 仓库源码压缩包
-https://your-domain.example/user/repo/archive/refs/tags/v1.0.tar.gz
+https://github-proxy.linyu.qzz.io/user/repo/archive/refs/tags/v1.0.tar.gz
 
 # Raw 文件
-https://your-domain.example/user/repo/raw/main/config.json
+https://github-proxy.linyu.qzz.io/user/repo/raw/main/config.json
 
 # Gist 文件
-https://your-domain.example/gist/user/123456789/raw/example.txt
+https://github-proxy.linyu.qzz.io/gist/user/123456789/raw/example.txt
 ```
 
 访问代理域名根路径，可以查看简短的使用提示。
