@@ -2,6 +2,8 @@
 
 一个基于 Cloudflare Workers 的公共 GitHub 资源代理。
 
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/y08lin4/GitHub-proxy)
+
 ## 支持
 
 - GitHub Release 下载
