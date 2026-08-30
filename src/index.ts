@@ -10,7 +10,11 @@ const ALLOWED_HOSTS = new Set([
 const CACHEABLE_STATUS = new Set([200, 206, 301, 302, 307, 308]);
 
 export default {
-  async fetch(request: Request): Promise<Response> {
+  async fetch(
+    request: Request,
+    _env: Record<string, never>,
+    ctx: ExecutionContext,
+  ): Promise<Response> {
     if (request.method === "OPTIONS") {
       return withCors(new Response(null, { status: 204 }));
     }
@@ -59,7 +63,7 @@ export default {
         const copy = response.clone();
         copy.headers.set("cache-control", cacheControl ?? "public, max-age=3600");
         copy.headers.set("x-github-proxy-cache", "HIT-ELIGIBLE");
-        await cache.put(cacheKey, copy);
+        ctx.waitUntil(cache.put(cacheKey, copy));
       }
     }
 
