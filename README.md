@@ -105,6 +105,7 @@ raw.githubusercontent.com
 gist.githubusercontent.com
 objects.githubusercontent.com
 github-releases.githubusercontent.com
+release-assets.githubusercontent.com
 ```
 
 ## 本地开发

@@ -4,6 +4,7 @@ const ALLOWED_HOSTS = new Set([
   "gist.githubusercontent.com",
   "objects.githubusercontent.com",
   "github-releases.githubusercontent.com",
+  "release-assets.githubusercontent.com",
 ]);
 
 const CACHEABLE_STATUS = new Set([200, 206, 301, 302, 307, 308]);
